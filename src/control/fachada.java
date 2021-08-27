@@ -13,7 +13,7 @@ import modelo.Paciente;
 
 public class fachada {
 	
-	public DaoUnitario<Paciente, Integer>DaoPaciente=new DaoUnitario<>("paciente.pac", new DAOMultiObjetosGenerica<>("paciente.pac", new GrabadorSerializado<>(), new RecuperadorIndexadoSerializado<>(),new BorradorSerializado<>()));
+	public DaoUnitario<Paciente, Integer>DaoPaciente=new DaoUnitario<>("paciente.pac", new DAOMultiObjetosGenerica<>("paciente.pac", new GrabadorSerializado<>(), new RecuperadorIndexadoSerializado<>(), new BorradorSerializado<>()));
 	public DaoUnitario<Paciente, Integer>DaoModificado;
 	
 	public boolean addPaciente (Paciente paciente) {
@@ -39,7 +39,7 @@ public class fachada {
 			id++;
 		}
 		DaoPaciente.borrar();
-	int idDos=0;
+		int idDos=0;
 		while (idDos<150) {
 		Paciente añadido=DaoModificado.buscar(id);
 			if (añadido!=null) {

@@ -158,6 +158,7 @@ public class ParaUI extends UI {
 					fachada.ModificarPaciente(Integer.valueOf(id));
 					getconsultaCombo().removeItemAt(Integer.valueOf(id)-1);
 					getcombomodificarid().removeItemAt(Integer.valueOf(id)-1);
+					getBajaComboId().removeItemAt(Integer.valueOf(id)-1);
 					getBajaMensaje().setText("Paciente dado de baja");
 					
 				} catch (Exception e) {

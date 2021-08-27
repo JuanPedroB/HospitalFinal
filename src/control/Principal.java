@@ -11,7 +11,7 @@ public class Principal {
 					ParaUI frame = new ParaUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
-					e.printStackTrace();
+					e.printStackTrace();	
 				}
 			}
 		});
